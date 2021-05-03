@@ -6,6 +6,8 @@ export default function Navbar() {
       <span>Paul</span>
       <ul>
         <Link href="/about"><a>About</a></Link>
+        <Link href="/work"><a>Work</a></Link>
+        <Link href="/opinion"><a>Opinion</a></Link>
         <Link href="/contact"><a>Contact</a></Link>
       </ul>
     </nav>

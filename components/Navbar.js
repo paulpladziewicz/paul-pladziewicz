@@ -19,17 +19,17 @@ export default function Navbar() {
   };
 
   return (
-    <nav className='flex justify-between'>
-      <span>Paul</span>
+    <nav className='mt-4 mx-4 flex justify-between items-center'>
+      <Link href="/"><a><img className='w-12' src="pp.svg" alt="logo"/></a></Link>
       <ul>
-        <Link href="/about"><a>{t.about}</a></Link>
-        <Link href="/work"><a>Work</a></Link>
-        <Link href="/opinion"><a>Opinion</a></Link>
-        <Link href="/contact"><a>Contact</a></Link>
+        <Link href="/about"><a className='mr-4'>{t.about}</a></Link>
+        <Link href="/work"><a className='mr-4'>Work</a></Link>
+        <Link href="/opinion"><a className='mr-4'>Opinion</a></Link>
+        <Link href="/contact"><a className='mr-4'>Contact</a></Link>
         <select
           onChange={changeLanguage}
           defaultValue={locale}
-          className="text-xl p-1 border-2 rounded-md"
+          className="text-xl p-1 border-2 border-gray-500 rounded-md"
         >
           <option className="text-gray-900" value="en">
             English

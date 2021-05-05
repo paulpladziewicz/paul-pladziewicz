@@ -29,7 +29,7 @@ export default function Navbar() {
         <select
           onChange={changeLanguage}
           defaultValue={locale}
-          className="text-xl p-1 border-2 border-gray-500 rounded-md"
+          className="text-xl p-1 border-2 border-gray-500 rounded-lg"
         >
           <option className="text-gray-900" value="en">
             English

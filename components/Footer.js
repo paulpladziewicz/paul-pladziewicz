@@ -6,8 +6,14 @@ export default function Footer() {
 
       <div className='flex'>
         <div className='w-1/2'>
-          <h2>Think I could help?</h2>
-          <p><span>Reach out.</span> I would be happy to have a discussion.</p>
+          <div className='w-10/12'>
+            <h2 className='text-6xl font-bold text-gray-700'>Think I could help?</h2>
+            <p className='mt-4 text-4xl font-semibold text-gray-700'><span
+              className='text-4xl font-bold text-purple-700'>Reach out.</span> I would be happy to have a discussion.
+            </p>
+            <p className='mt-2 text-2xl font-light'>Please state clearly the opportunity or why you feel I could add
+              value to your mission.</p>
+          </div>
         </div>
 
         <div className='w-1/2 bg-gray-50'>
@@ -31,7 +37,7 @@ export default function Footer() {
                         placeholder='How can I assist?' rows="5" required={true}/>
             </div>
             <div>
-              <input type="submit"/>
+              <input className='btn' type="submit"/>
             </div>
           </form>
         </div>

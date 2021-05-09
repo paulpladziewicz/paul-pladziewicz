@@ -52,15 +52,20 @@ export default function Home() {
           <span className='block mt-6 text-6xl font-bold text-purple-700'>At any scale.</span>
         </div>
 
-        <div className='p-4 mt-40 rounded-lg bg-purple-800'>
-          <h2 className='text-white text-4xl font-bold'>Core Skills</h2>
-          <p className='mt-4 w-7/12 text-xl text-gray-300'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Adipisci amet culpa cumque delectus earum enim
-            error provident ratione soluta tempora?</p>
+        <div className='mt-40 flex'>
+          <div className='w-1/2 rounded-lg p-4 bg-purple-800'>
+            <h2 className='text-white text-4xl font-bold'>Core Skills</h2>
+            <p className='mt-4 text-xl text-gray-300'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Adipisci amet culpa cumque delectus earum enim
+              error provident ratione soluta tempora?</p>
+          </div>
+          <div className='w-1/2 p-4'>
+            <h2 className='text-4xl font-bold text-gray-700'>Core Philosophies</h2>
+          </div>
         </div>
 
         <div className='mt-40'>
-          <h2 className='text-6xl font-semibold text-gray-700'>Feature Projects</h2>
+          <h2 className='text-6xl font-bold text-gray-700'>Featured Projects</h2>
           <span className='block mt-4 text-4xl font-bold text-purple-700'>Always developing.</span>
         </div>
 

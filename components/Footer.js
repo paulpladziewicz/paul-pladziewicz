@@ -16,7 +16,7 @@ export default function Footer() {
   return (
     <footer className='mt-20'>
 
-      <div className='flex'>
+      <div className='flex items-center'>
         <div className='w-1/2'>
           <div className='w-10/12'>
             <h2 className='text-6xl font-bold text-gray-700'>Think I could help?</h2>
@@ -25,6 +25,7 @@ export default function Footer() {
             </p>
             <p className='mt-2 text-2xl font-light'>Please state clearly the opportunity or why you feel I could add
               value to your mission.</p>
+            <img src="/discussion.jpeg" alt="three people sitting around a desk with their laptops"/>
           </div>
         </div>
 

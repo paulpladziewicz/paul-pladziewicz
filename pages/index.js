@@ -101,6 +101,10 @@ export default function Home() {
 
           <div className='w-1/2 p-8'>
             <h2 className='text-center text-purple-700 text-4xl font-bold'>Core Philosophies</h2>
+            <ul className='mt-4 mx-auto w-10/12 text-center'>
+              <li className='mt-10 text-xl font-light'>It is during our darkest moments when we must focus to see the light.</li>
+              <li className='mt-10 text-xl font-light'>The ideal man with dignity and grace, making the best of circumstances.</li>
+            </ul>
           </div>
         </div>
 

@@ -52,26 +52,56 @@ export default function Home() {
           </div>
         </div>
 
+
         <div className='mt-40 mx-auto w-3/4 text-center'>
           <h2 className='text-6xl font-semibold text-gray-700'>{t.purpose[0]}</h2>
           <span className='block mt-6 text-6xl font-bold text-purple-700'>{t.purpose[1]}</span>
         </div>
 
+        <div>
+          <img src="/hands.jpeg" alt="many hand prints with different colors"/>
+        </div>
+
         <div className='mt-40 flex'>
-          <div className='w-1/2 rounded-lg p-4 bg-purple-800'>
+          <div className='w-1/2 rounded-lg p-8 bg-purple-800 to-purple-600'>
             <h2 className='text-white text-4xl font-bold'>Core Skills</h2>
             <p className='mt-4 text-xl text-gray-300'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Adipisci amet culpa cumque delectus earum enim
               error provident ratione soluta tempora?</p>
+            <div className='mt-8'>
+              <h3 className='text-3xl font-bold text-white'>Front-end</h3>
+              <ul className='mt-4 flex flex-wrap'>
+                <li className='mr-8 text-xl font-medium text-gray-300'>HTML</li>
+                <li className='mr-8 text-xl font-medium text-gray-300'>CSS (Sass, TailwindCSS)</li>
+                <li className='mr-8 text-xl font-medium text-gray-300'>Javascript (React)</li>
+              </ul>
+            </div>
+            <div className='mt-8'>
+              <h3 className='text-3xl font-bold text-white'>Back-end</h3>
+              <ul className='mt-4 flex flex-wrap'>
+                <li className='mr-8 text-xl font-medium text-gray-300'>Node.js</li>
+                <li className='mr-8 text-xl font-medium text-gray-300'>PHP</li>
+              </ul>
+            </div>
+            <div className='mt-8'>
+              <h3 className='text-3xl font-bold text-white'>Database</h3>
+              <ul className='mt-4 flex flex-wrap'>
+                <li className='mr-8 text-xl font-medium text-gray-300'>MongoDB</li>
+                <li className='mr-8 text-xl font-medium text-gray-300'>MySQL</li>
+              </ul>
+            </div>
+            <div className='mt-8'>
+              <h3 className='text-3xl font-bold text-white'>Deployment</h3>
+              <ul className='mt-4 flex flex-wrap'>
+                <li className='mr-8 text-xl font-medium text-gray-300'>cPanel</li>
+                <li className='mr-8 text-xl font-medium text-gray-300'>AWS</li>
+              </ul>
+            </div>
           </div>
-          <div className='w-1/2 p-4'>
-            <h2 className='text-4xl font-bold text-gray-700'>Core Philosophies</h2>
-          </div>
-        </div>
 
-        <div className='mt-40'>
-          <h2 className='text-6xl font-bold text-gray-700'>Featured Projects</h2>
-          <span className='block mt-4 text-4xl font-bold text-purple-700'>Always developing.</span>
+          <div className='w-1/2 p-8'>
+            <h2 className='text-center text-purple-700 text-4xl font-bold'>Core Philosophies</h2>
+          </div>
         </div>
 
       </Layout>

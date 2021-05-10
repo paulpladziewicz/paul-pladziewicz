@@ -16,7 +16,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className='w-1/2 bg-gray-50'>
+        <div className='w-1/2'>
           <form className='flex flex-wrap justify-between' action="">
             <div style={{width: '49%'}}>
               <input className='w-full p-4 rounded-2xl bg-gray-100 text-lg' type="text" placeholder='Name'/>
@@ -37,7 +37,7 @@ export default function Footer() {
                         placeholder='How can I assist?' rows="5" required={true}/>
             </div>
             <div>
-              <input className='btn' type="submit"/>
+              <input className='mt-4 btn' type="submit"/>
             </div>
           </form>
         </div>

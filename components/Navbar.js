@@ -1,10 +1,13 @@
 import { useRouter } from "next/router";
 import Link from 'next/link'
+import {useState} from "react";
 
 const en = {
+  langButton: 'Español',
   about: 'About',
 };
 const es = {
+  langButton: 'Inglés',
   about: 'Sobre'
 };
 
@@ -14,7 +17,7 @@ export default function Navbar() {
   const t = locale === "en" ? en : es;
 
   const changeLanguage = (e) => {
-    const locale = e.target.value;
+    const locale = e.target.innerText === "Español" ? "es" : "en";
     router.push(router.pathname, router.asPath, { locale });
   };
 
@@ -26,19 +29,7 @@ export default function Navbar() {
         <Link href="/work"><a className='mr-4 font-semibold'>Work</a></Link>
         <Link href="/opinion"><a className='mr-4 font-semibold'>Opinion</a></Link>
         <Link href="/contact"><a className='mr-4 font-semibold'>Contact</a></Link>
-        <button className='btn'>Español</button>
-        {/*<select*/}
-        {/*  onChange={changeLanguage}*/}
-        {/*  defaultValue={locale}*/}
-        {/*  className="text-xl p-1 border-2 border-gray-500 rounded-lg"*/}
-        {/*>*/}
-        {/*  <option className="text-gray-900" value="en">*/}
-        {/*    English*/}
-        {/*  </option>*/}
-        {/*  <option className="text-gray-900" value="es">*/}
-        {/*    Español*/}
-        {/*  </option>*/}
-        {/*</select>*/}
+        <button className='btn' onClick={changeLanguage}>{t.langButton}</button>
       </ul>
     </nav>
   )

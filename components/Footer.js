@@ -1,6 +1,18 @@
+import {useRouter} from "next/router";
 import Link from 'next/link'
 
+const en = {
+  links: ['About', 'Work', 'Opinion', 'Contact']
+};
+const es = {
+  links: ['Sobre', 'Trabajo', 'Opinión', 'Contacto']
+};
+
 export default function Footer() {
+  const router = useRouter();
+  const {locale} = router;
+  const t = locale === "en" ? en : es;
+
   return (
     <footer className='mt-20'>
 
@@ -43,12 +55,21 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className='mt-20 flex'>
+      <div className='mt-20 flex items-center'>
         <div className='w-1/2'>
-          <h2>More description</h2>
+          <div className='w-10/12'>
+            <h2 className='text-5xl font-bold'>Paul Pladziewicz</h2>
+            <h3 className='mt-2 text-4xl font-semibold text-purple-700'>Software Engineer</h3>
+            <p className='mt-2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci assumenda aut commodi culpa dicta
+              doloribus eligendi excepturi explicabo fugit illum incidunt maxime molestias, obcaecati, pariatur possimus
+              quaerat quibusdam quo quos, sint sit sunt suscipit tenetur ullam vel veniam voluptatum!</p>
+          </div>
         </div>
         <ul className='w-1/2'>
-          <li>List links</li>
+          <Link href="/about"><a className='mr-4 font-semibold'>{t.links[0]}</a></Link>
+          <Link href="/work"><a className='mr-4 font-semibold'>{t.links[1]}</a></Link>
+          <Link href="/opinion"><a className='mr-4 font-semibold'>{t.links[2]}</a></Link>
+          <Link href="/contact"><a className='mr-4 font-semibold'>{t.links[3]}</a></Link>
         </ul>
       </div>
 

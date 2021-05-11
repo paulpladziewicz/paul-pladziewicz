@@ -65,7 +65,10 @@ export default function Home() {
         <div className='mt-40 flex'>
           <div className='w-1/2 rounded-lg p-8 bg-purple-800 to-purple-600'>
             <h2 className='text-white text-4xl font-bold'>Core Skills</h2>
-            <p className='mt-4 text-xl font-light text-white'>Continuously learning by focusing on building practical solutions.</p>
+            <p className='mt-4 text-xl font-light text-white'>Continuously learning by focusing on building practical
+              solutions.</p>
+            <p className='mt-2 text-xl font-light text-white'>Here are a few technologies I've been working with
+              recently.</p>
             <div className='mt-8'>
               <h3 className='text-3xl font-bold text-purple-200'>Front-end</h3>
               <ul className='mt-4 flex flex-wrap'>
@@ -98,10 +101,24 @@ export default function Home() {
           </div>
 
           <div className='w-1/2 p-8'>
-            <h2 className='text-center text-purple-700 text-4xl font-bold'>Core Philosophies</h2>
+            <h2 className='text-center text-purple-700 text-4xl font-bold'>Favorite Quotes</h2>
             <ul className='mt-4 mx-auto w-10/12 text-center'>
-              <li className='mt-10 text-xl font-light'>It is during our darkest moments when we must focus to see the light.</li>
-              <li className='mt-10 text-xl font-light'>The ideal man with dignity and grace, making the best of circumstances.</li>
+              <li className='mt-10 text-xl font-light'>The only way to learn a new programming language is by writing
+                programs in it. <p className='text-right text-gray-700 mr-4'>- Dennis Ritchie</p>
+              </li>
+              <li className='mt-10 text-xl font-light'>When you struggle with a problem, that’s when you understand
+                it.
+                Anyone who struggled hard with a problem never forgets it. <p className='text-right text-gray-700 mr-4'>-
+                  Elon Musk</p>
+              </li>
+              <li className='mt-10 text-xl font-light'>Talk is cheap. Show me the code. <p
+                className='text-right text-gray-700 mr-4'>-
+                Linus Torvalds</p>
+              </li>
+              <li className='mt-10 text-xl font-light'>The ideal man bears the accidents of life with dignity and grace,
+                making the best of
+                circumstances. <p className='text-right text-gray-700 mr-4'>- Aristotle</p>
+              </li>
             </ul>
           </div>
         </div>

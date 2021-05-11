@@ -65,18 +65,19 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className='mt-20 mb-8 flex'>
-        <div className='w-1/2'>
+      <div className='mt-20 mb-8 flex items-center'>
+        <div className='w-8/12'>
           <div className='w-10/12'>
             <h2 className='text-5xl font-bold'>Paul Pladziewicz</h2>
             <h3 className='mt-2 text-4xl font-semibold text-purple-700'>{t.footer.title}</h3>
-            <p className='mt-2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci assumenda aut
-              commodi culpa dicta
-              doloribus eligendi excepturi explicabo fugit illum incidunt maxime molestias, obcaecati, pariatur possimus
-              quaerat quibusdam quo quos, sint sit sunt suscipit tenetur ullam vel veniam voluptatum!</p>
+            <p className='mt-2 font-light'>I believe there are still many ways to
+              make life easier with software, especially
+              internationally.
+              Sometimes it means creating tools that save us time. Other times it's about helping us conduct business
+              regardless of place. When you help others make a connection online, who knows where it can lead?</p>
           </div>
         </div>
-        <ul className='w-1/2 mt-10'>
+        <ul className='w-4/12 mt-10'>
           <Link href="/about"><a className='mr-8 font-semibold'>{t.links[0]}</a></Link>
           <Link href="/work"><a className='mr-8 font-semibold'>{t.links[1]}</a></Link>
           <Link href="/opinion"><a className='mr-8 font-semibold'>{t.links[2]}</a></Link>
@@ -84,7 +85,7 @@ export default function Footer() {
         </ul>
       </div>
 
-      <p className='mb-2'>Copyright 2021</p>
+      <p className='mb-2'>© Copyright 2021 Paul Pladziewicz. All rights reserved.</p>
     </footer>
   )
 }

@@ -7,10 +7,7 @@ const en = {
     title: 'About Paul Pladziewicz - Software Engineer'
   },
   about: {
-    title: 'About Paul Pladziewicz',
-    h1: 'Purpose',
-    p1: '',
-    p2: '',
+    title: 'About Paul Pladziewicz'
   }
 }
 
@@ -19,10 +16,7 @@ const es = {
     title: 'Sobre Paul Pladziewicz - Ingeniero de software'
   },
   about: {
-    title: 'Sobre Paul Pladziewicz',
-    h1: 'Propósito',
-    p1: '',
-    p2: '',
+    title: 'Sobre Paul Pladziewicz'
   }
 }
 
@@ -44,7 +38,7 @@ export default function About() {
           </div>
           <div className='w-9/12 px-8'>
             <h1 className='text-5xl font-bold text-gray-700'>{t.about.title}</h1>
-            <h2 className='mt-2 text-3xl font-semibold text-purple-700'>{t.about.h1}</h2>
+            <h2 className='mt-2 text-3xl font-semibold text-purple-700'>Purpose</h2>
             <p className='mt-2 text-xl font-light tracking-wide leading-relaxed'>I believe there are still many ways to
               make life easier with software, especially
               internationally.

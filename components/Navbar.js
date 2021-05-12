@@ -3,13 +3,13 @@ import Link from 'next/link'
 
 const en = {
   langButton: 'Español',
-  links: ['About', 'Work', 'Tips', 'Opinion', 'Philosophy', 'Contact'],
-  hrefs: ['/about', '/work', '/tips', '/opinion', '/philosophy', '/#contact']
+  links: ['About', 'Portfolio', 'Publications', 'Contact'],
+  hrefs: ['/about', '/portfolio', '/publications', '/contact']
 };
 const es = {
   langButton: 'Inglés',
-  links: ['Sobre', 'Trabajo', 'Opinión', 'Contacto'],
-  hrefs: ['/sobre', '/trabajo', '/opinion', '/#contacto']
+  links: ['Sobre', 'Portafolio', 'Publicaciones', 'Contacto'],
+  hrefs: ['/sobre', '/portafolio', '/publicaciones', '/contacto']
 };
 
 export default function Navbar() {
@@ -30,8 +30,6 @@ export default function Navbar() {
         <Link href={t.hrefs[1]}><a className='mr-8 font-semibold text-lg'>{t.links[1]}</a></Link>
         <Link href={t.hrefs[2]}><a className='mr-8 font-semibold text-lg'>{t.links[2]}</a></Link>
         <Link href={t.hrefs[3]}><a className='mr-8 font-semibold text-lg'>{t.links[3]}</a></Link>
-        <Link href={t.hrefs[4]}><a className='mr-8 font-semibold text-lg'>{t.links[4]}</a></Link>
-        <Link href={t.hrefs[5]}><a className='mr-8 font-semibold text-lg'>{t.links[5]}</a></Link>
         <button className='btn' onClick={changeLanguage}>{t.langButton}</button>
       </ul>
     </nav>

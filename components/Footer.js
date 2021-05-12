@@ -2,8 +2,8 @@ import {useRouter} from "next/router";
 import Link from 'next/link'
 
 const en = {
-  contact: ['Think I could help?', 'Reach out.', 'I would be happy to have a discussion.', 'Please state clearly the opportunity or why you feel I could add your mission.'],
-  links: ['About', 'Work', 'Opinion', 'Contact'],
+  contact: ['Think I could help?', 'Reach out.', 'I would be happy to have a discussion.', 'Please state clearly the opportunity or why you feel I could add value to your mission.'],
+  links: ['About', 'Portfolio', 'Opinion', 'Contact'],
   form: ['Name', 'Business', 'Email', 'How did you find me?', 'How can I assist?', 'Submit'],
   footer: {
     title: 'Software Engineer'
@@ -11,7 +11,7 @@ const en = {
 };
 const es = {
   contact: ['¿Crees que puedo ayudar?', 'Envíame un mensaje.', 'Estaría feliz de tener una discusión.', 'Indique claramente la oportunidad o por qué cree que podría agregar su misión.'],
-  links: ['Sobre', 'Trabajo', 'Opinión', 'Contacto'],
+  links: ['Sobre', 'Portafolio', 'Opinión', 'Contacto'],
   form: ['Nombre', 'Negocio', 'Correo electrónico', '¿Cómo me encontraste?', '¿Cómo puedo ayudarle?', 'Enviar'],
   footer: {
     title: 'Ingeniero de software'

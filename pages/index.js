@@ -104,20 +104,20 @@ export default function Home() {
             <h2 className='text-center text-purple-700 text-4xl font-bold'>Favorite Quotes</h2>
             <ul className='mt-4 mx-auto w-10/12 text-center'>
               <li className='mt-10 text-xl font-light'>The only way to learn a new programming language is by writing
-                programs in it. <p className='text-right text-gray-700 mr-4'>- Dennis Ritchie</p>
+                programs in it. <p className='text-right text-lg text-gray-700 mr-4'>- Dennis Ritchie</p>
               </li>
               <li className='mt-10 text-xl font-light'>When you struggle with a problem, that’s when you understand
                 it.
-                Anyone who struggled hard with a problem never forgets it. <p className='text-right text-gray-700 mr-4'>-
+                Anyone who struggled hard with a problem never forgets it. <p className='text-right text-lg text-gray-700 mr-4'>-
                   Elon Musk</p>
               </li>
               <li className='mt-10 text-xl font-light'>Talk is cheap. Show me the code. <p
-                className='text-right text-gray-700 mr-4'>-
+                className='text-right text-lg text-gray-700 mr-4'>-
                 Linus Torvalds</p>
               </li>
               <li className='mt-10 text-xl font-light'>The ideal man bears the accidents of life with dignity and grace,
                 making the best of
-                circumstances. <p className='text-right text-gray-700 mr-4'>- Aristotle</p>
+                circumstances. <p className='text-right text-lg text-gray-700 mr-4'>- Aristotle</p>
               </li>
             </ul>
           </div>

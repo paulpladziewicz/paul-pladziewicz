@@ -121,16 +121,16 @@ export default function Home() {
           <div className='w-1/2 p-8'>
             <h2 className='text-center text-purple-700 text-4xl font-bold'>{t.quotesTitle}</h2>
             <ul className='mt-4 mx-auto w-10/12 text-center'>
-              <li className='mt-10 text-xl font-light'>{t.quotes[0]} <p className='text-right text-lg text-gray-700 mr-4'>- Dennis Ritchie</p>
+              <li className='mt-10 text-xl font-medium'>{t.quotes[0]} <p className='text-right text-lg text-gray-700 mr-4'>- Dennis Ritchie</p>
               </li>
-              <li className='mt-10 text-xl font-light'>{t.quotes[1]} <p className='text-right text-lg text-gray-700 mr-4'>-
+              <li className='mt-10 text-xl font-medium'>{t.quotes[1]} <p className='text-right text-lg text-gray-700 mr-4'>-
                   Elon Musk</p>
               </li>
-              <li className='mt-10 text-xl font-light'>{t.quotes[2]} <p
+              <li className='mt-10 text-xl font-medium'>{t.quotes[2]} <p
                 className='text-right text-lg text-gray-700 mr-4'>-
                 Linus Torvalds</p>
               </li>
-              <li className='mt-10 text-xl font-light'>{t.quotes[3]} <p className='text-right text-lg text-gray-700 mr-4'>- Aristotle</p>
+              <li className='mt-10 text-xl font-medium'>{t.quotes[3]} <p className='text-right text-lg text-gray-700 mr-4'>- Aristotle</p>
               </li>
             </ul>
           </div>

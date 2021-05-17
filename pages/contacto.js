@@ -7,7 +7,7 @@ const en = {
     title: 'Contact Paul Pladziewicz - Software Engineer'
   },
   contact: {
-    title: 'Thank you for your expressed interest.',
+    title: 'Gracias por su interés expresado.',
     h1: 'Purpose',
     p1: '',
     p2: '',
@@ -26,7 +26,7 @@ const es = {
   }
 }
 
-export default function Contacto() {
+export default function Contact() {
   const router = useRouter();
   const {locale} = router;
   const t = locale === "en" ? en : es;

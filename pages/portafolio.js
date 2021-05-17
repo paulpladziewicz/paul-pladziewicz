@@ -6,8 +6,8 @@ const en = {
   meta: {
     title: 'About Paul Pladziewicz - Software Engineer'
   },
-  about: {
-    title: 'About Paul Pladziewicz'
+  portfolio: {
+    title: 'Coming Soon'
   }
 }
 
@@ -15,8 +15,8 @@ const es = {
   meta: {
     title: 'Sobre Paul Pladziewicz - Ingeniero de software'
   },
-  about: {
-    title: 'Sobre Paul Pladziewicz'
+  portfolio: {
+    title: 'Próximamente, en breve, pronto.'
   }
 }
 

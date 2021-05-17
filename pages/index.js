@@ -11,7 +11,17 @@ const en = {
     desc: ['Software engineer', 'with experience building', 'websites', 'and', 'web applications', '.']
   },
   purpose: ['Utilizing my talents within software engineering to add value to the lives of others.', 'At any scale.'],
-  form: {}
+  skills: ['Core Skills',
+  'Continuously learning by focusing on building practical solutions.',
+    'Here are a few technologies I\'ve been working with recently.'
+  ],
+  quotes: [
+    'The only way to learn a new programming language is by writing programs in it.',
+    'When you struggle with a problem, that’s when you understand it. Anyone who struggled hard with a problem never forgets it.',
+    'Talk is cheap. Show me the code.',
+    'The ideal man bears the accidents of life with dignity and grace, making the best of circumstances.'
+  ],
+  quotesTitle: 'Favorite Quotes'
 };
 const es = {
   meta: {
@@ -22,7 +32,17 @@ const es = {
     desc: ['Ingeniero de software', 'con experiencia en la construcción de', 'sitios web', 'y', 'aplicaciones web', '.']
   },
   purpose: ['Utilizando mis talentos dentro de la ingeniería de software para agregar valor a la vida de los demás.', 'A cualquier escala.'],
-  form: {}
+  skills: ['Habilidades Fundamentales',
+    'Aprendizaje continuo enfocándose en la construcción de soluciones prácticas.',
+    'Aquí hay algunas tecnologías con las que he estado trabajando recientemente.'
+  ],
+  quotes: [
+    'La única forma de aprender un nuevo lenguaje de programación es escribiendo programas en él.',
+    'Cuando luchas con un problema, es cuando lo entiendes. Cualquiera que haya luchado mucho con un problema nunca lo olvida.',
+    'Hablar es barato. Muéstrame el código.',
+    'El hombre ideal soporta los accidentes de la vida con dignidad y gracia, aprovechando las circunstancias al máximo.'
+  ],
+  quotesTitle: 'Citas Favoritas'
 };
 
 export default function Home() {
@@ -64,11 +84,9 @@ export default function Home() {
 
         <div className='mt-40 flex'>
           <div className='w-1/2 rounded-lg p-8 bg-purple-800 to-purple-600'>
-            <h2 className='text-white text-4xl font-bold'>Core Skills</h2>
-            <p className='mt-4 text-xl font-light text-white'>Continuously learning by focusing on building practical
-              solutions.</p>
-            <p className='mt-2 text-xl font-light text-white'>Here are a few technologies I've been working with
-              recently.</p>
+            <h2 className='text-white text-4xl font-bold'>{t.skills[0]}</h2>
+            <p className='mt-4 text-xl font-light text-white'>{t.skills[1]}</p>
+            <p className='mt-2 text-xl font-light text-white'>{t.skills[2]}</p>
             <div className='mt-8'>
               <h3 className='text-3xl font-bold text-purple-200'>Front-end</h3>
               <ul className='mt-4 flex flex-wrap'>
@@ -101,23 +119,18 @@ export default function Home() {
           </div>
 
           <div className='w-1/2 p-8'>
-            <h2 className='text-center text-purple-700 text-4xl font-bold'>Favorite Quotes</h2>
+            <h2 className='text-center text-purple-700 text-4xl font-bold'>{t.quotesTitle}</h2>
             <ul className='mt-4 mx-auto w-10/12 text-center'>
-              <li className='mt-10 text-xl font-light'>The only way to learn a new programming language is by writing
-                programs in it. <p className='text-right text-lg text-gray-700 mr-4'>- Dennis Ritchie</p>
+              <li className='mt-10 text-xl font-light'>{t.quotes[0]} <p className='text-right text-lg text-gray-700 mr-4'>- Dennis Ritchie</p>
               </li>
-              <li className='mt-10 text-xl font-light'>When you struggle with a problem, that’s when you understand
-                it.
-                Anyone who struggled hard with a problem never forgets it. <p className='text-right text-lg text-gray-700 mr-4'>-
+              <li className='mt-10 text-xl font-light'>{t.quotes[1]} <p className='text-right text-lg text-gray-700 mr-4'>-
                   Elon Musk</p>
               </li>
-              <li className='mt-10 text-xl font-light'>Talk is cheap. Show me the code. <p
+              <li className='mt-10 text-xl font-light'>{t.quotes[2]} <p
                 className='text-right text-lg text-gray-700 mr-4'>-
                 Linus Torvalds</p>
               </li>
-              <li className='mt-10 text-xl font-light'>The ideal man bears the accidents of life with dignity and grace,
-                making the best of
-                circumstances. <p className='text-right text-lg text-gray-700 mr-4'>- Aristotle</p>
+              <li className='mt-10 text-xl font-light'>{t.quotes[3]} <p className='text-right text-lg text-gray-700 mr-4'>- Aristotle</p>
               </li>
             </ul>
           </div>

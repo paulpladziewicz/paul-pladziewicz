@@ -3,18 +3,22 @@ import Link from 'next/link'
 
 const en = {
   contact: ['Think I could help?', 'Reach out.', 'I would be happy to have a discussion.', 'Please state clearly the opportunity or why you feel I could add value to your mission.'],
-  links: ['About', 'Portfolio', 'Opinion', 'Contact'],
+  links: ['About', 'Portfolio', 'Publications', 'Contact'],
+  hrefs: ['/about', '/portfolio', '/publications', '/contact'],
   form: ['Name', 'Business', 'Email', 'How did you find me?', 'How can I assist?', 'Submit'],
   footer: {
-    title: 'Software Engineer'
+    title: 'Software Engineer',
+    desc: 'I believe there are still many ways to make life easier with software, especially internationally. Sometimes it means creating tools that save us time. Other times it\'s about helping us conduct business regardless of place. When you help others make a connection online, who knows where it can lead?'
   }
 };
 const es = {
   contact: ['¿Crees que puedo ayudar?', 'Envíame un mensaje.', 'Estaría feliz de tener una discusión.', 'Indique claramente la oportunidad o por qué cree que podría agregar su misión.'],
-  links: ['Sobre', 'Portafolio', 'Opinión', 'Contacto'],
+  links: ['Sobre', 'Portafolio', 'Publicaciones', 'Contacto'],
+  hrefs: ['/sobre', '/portafolio', '/publicaciones', '/contacto'],
   form: ['Nombre', 'Negocio', 'Correo electrónico', '¿Cómo me encontraste?', '¿Cómo puedo ayudarle?', 'Enviar'],
   footer: {
-    title: 'Ingeniero de software'
+    title: 'Ingeniero de software',
+    desc: 'Creo que todavía hay muchas formas de hacer la vida más fácil con el software, especialmente a nivel internacional. A veces significa crear herramientas que nos ahorren tiempo. Otras veces se trata de ayudarnos a realizar negocios sin importar el lugar. Cuando ayudas a otros a establecer una conexión en línea, ¿quién sabe a dónde puede conducir?'
   }
 };
 
@@ -70,18 +74,14 @@ export default function Footer() {
           <div className='w-10/12'>
             <h2 className='text-5xl font-bold'>Paul Pladziewicz</h2>
             <h3 className='mt-2 text-4xl font-semibold text-purple-700'>{t.footer.title}</h3>
-            <p className='mt-2 font-light'>I believe there are still many ways to
-              make life easier with software, especially
-              internationally.
-              Sometimes it means creating tools that save us time. Other times it's about helping us conduct business
-              regardless of place. When you help others make a connection online, who knows where it can lead?</p>
+            <p className='mt-2 font-light'>{t.footer.desc}</p>
           </div>
         </div>
-        <ul className='w-4/12 mt-10'>
-          <Link href="/about"><a className='mr-8 font-semibold'>{t.links[0]}</a></Link>
-          <Link href="/work"><a className='mr-8 font-semibold'>{t.links[1]}</a></Link>
-          <Link href="/opinion"><a className='mr-8 font-semibold'>{t.links[2]}</a></Link>
-          <Link href="/contact"><a className='mr-8 font-semibold'>{t.links[3]}</a></Link>
+        <ul className='w-4/12 mt-10 flex'>
+          <Link href={t.hrefs[0]}><a className='hidden sm:block mr-4 font-semibold text-lg'>{t.links[0]}</a></Link>
+          <Link href={t.hrefs[1]}><a className='hidden sm:block mr-4 font-semibold text-lg'>{t.links[1]}</a></Link>
+          <Link href={t.hrefs[2]}><a className='hidden sm:block mr-4 font-semibold text-lg'>{t.links[2]}</a></Link>
+          <Link href={t.hrefs[3]}><a className='hidden sm:block mr-4 font-semibold text-lg'>{t.links[3]}</a></Link>
         </ul>
       </div>
 

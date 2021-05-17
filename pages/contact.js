@@ -19,7 +19,7 @@ const es = {
     title: 'Contáctame - Paul Pladziewicz - Ingeniero de software'
   },
   contact: {
-    title: 'Sobre Paul Pladziewicz',
+    title: 'Gracias por su interés expresado.',
     h1: 'Propósito',
     p1: '',
     p2: '',

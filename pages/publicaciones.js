@@ -4,29 +4,23 @@ import Head from "next/head";
 
 const en = {
   meta: {
-    title: 'Contact Paul Pladziewicz - Software Engineer'
+    title: 'Publications - Paul Pladziewicz - Software Engineer'
   },
-  contact: {
-    title: 'Thank you for your expressed interest.',
-    h1: 'Purpose',
-    p1: '',
-    p2: '',
+  pub: {
+    title: 'Coming Soon.'
   }
 }
 
 const es = {
   meta: {
-    title: 'Contáctame - Paul Pladziewicz - Ingeniero de software'
+    title: 'Publicaciones - Paul Pladziewicz - Ingeniero de software'
   },
-  contact: {
-    title: 'Sobre Paul Pladziewicz',
-    h1: 'Propósito',
-    p1: '',
-    p2: '',
+  pub: {
+    title: 'Próximamente, en breve, pronto.'
   }
 }
 
-export default function Contact() {
+export default function Publications() {
   const router = useRouter();
   const {locale} = router;
   const t = locale === "en" ? en : es;
@@ -38,7 +32,7 @@ export default function Contact() {
       </Head>
 
       <div className='mt-20 w-10/12 mx-auto'>
-        <h1 className='text-5xl text-center font-bold text-gray-700'>{t.contact.title}</h1>
+        <h1 className='text-5xl text-center font-bold text-gray-700'>{t.pub.title}</h1>
       </div>
     </Layout>
   )

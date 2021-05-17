@@ -7,7 +7,7 @@ const en = {
     title: 'Contact Paul Pladziewicz - Software Engineer'
   },
   contact: {
-    title: 'Gracias por su interés expresado.',
+    title: 'Thank you for your expressed interest.',
     h1: 'Purpose',
     p1: '',
     p2: '',
@@ -19,7 +19,7 @@ const es = {
     title: 'Contáctame - Paul Pladziewicz - Ingeniero de software'
   },
   contact: {
-    title: 'Sobre Paul Pladziewicz',
+    title: 'Gracias por su interés expresado.',
     h1: 'Propósito',
     p1: '',
     p2: '',
@@ -37,9 +37,9 @@ export default function Contact() {
         <link rel="shortcut icon" href="/pp.svg"/>
       </Head>
 
-      <div className='mt-20 w-10/12 mx-auto'>
-        <h1 className='text-5xl text-center font-bold text-gray-700'>{t.contact.title}</h1>
-      </div>
+      {/*<div className='mt-20 w-10/12 mx-auto'>*/}
+      {/*  <h1 className='text-5xl text-center font-bold text-gray-700'>{t.contact.title}</h1>*/}
+      {/*</div>*/}
     </Layout>
   )
 }

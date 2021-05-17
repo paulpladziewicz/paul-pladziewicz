@@ -20,7 +20,7 @@ const es = {
   }
 }
 
-export default function Contact() {
+export default function Publications() {
   const router = useRouter();
   const {locale} = router;
   const t = locale === "en" ? en : es;

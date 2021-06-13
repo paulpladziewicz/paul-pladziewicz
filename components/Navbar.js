@@ -28,7 +28,7 @@ export default function Navbar() {
       <ul className='flex items-center'>
         <Link href={t.hrefs[0]}><a className='hidden sm:block mr-8 font-semibold text-lg'>{t.links[0]}</a></Link>
         <Link href={t.hrefs[1]}><a className='hidden sm:block mr-8 font-semibold text-lg'>{t.links[1]}</a></Link>
-        <Link href={t.hrefs[2]}><a className='hidden sm:block mr-8 font-semibold text-lg'>{t.links[2]}</a></Link>
+        {/*<Link href={t.hrefs[2]}><a className='hidden sm:block mr-8 font-semibold text-lg'>{t.links[2]}</a></Link>*/}
         <Link href={t.hrefs[3]}><a className='hidden sm:block mr-8 font-semibold text-lg'>{t.links[3]}</a></Link>
         <button className='btn' onClick={changeLanguage}>{t.langButton}</button>
       </ul>

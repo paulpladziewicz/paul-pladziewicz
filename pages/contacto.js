@@ -37,6 +37,7 @@ export default function Contact() {
         <link rel="shortcut icon" href="/pp.svg"/>
       </Head>
 
+      <div className='-mb-12'></div>
       {/*<div className='mt-20 w-10/12 mx-auto'>*/}
       {/*  <h1 className='text-5xl text-center font-bold text-gray-700'>{t.contact.title}</h1>*/}
       {/*</div>*/}

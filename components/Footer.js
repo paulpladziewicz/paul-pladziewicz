@@ -30,9 +30,9 @@ export default function Footer() {
   return (
     <footer className='mt-32'>
 
-      <div id='contact contacto' className='flex items-center'>
-        <div className='w-1/2'>
-          <div className='w-10/12'>
+      <div id='contact contacto' className='md:flex md:items-center mx-4'>
+        <div className='md:w-1/2'>
+          <div className='md:w-10/12'>
             <h2 className='text-6xl font-bold text-gray-700'>{t.contact[0]}</h2>
             <p className='mt-4 text-4xl font-semibold text-gray-700'><span
               className='text-4xl font-bold text-purple-700'>{t.contact[1]}</span> {t.contact[2]}
@@ -42,20 +42,20 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className='w-1/2'>
-          <form className='flex flex-wrap justify-between' action="">
-            <div style={{width: '49%'}}>
-              <input className='w-full p-4 rounded-2xl bg-gray-100 text-lg' type="text" placeholder={t.form[0]}/>
+        <div className='md:w-1/2'>
+          <form className='md:flex md:flex-wrap md:justify-between' action="">
+            <div className='md:w-1/2'>
+              <input className='w-full p-4 md:mr-1 rounded-2xl bg-gray-100 text-lg' type="text" placeholder={t.form[0]}/>
             </div>
-            <div style={{width: '49%'}}>
-              <input className='w-full p-4 rounded-2xl bg-gray-100 text-lg' type="text" placeholder={t.form[1]}/>
+            <div className='mt-4 md:w-1/2 md:mt-0'>
+              <input className='w-full p-4 md:ml-1 rounded-2xl bg-gray-100 text-lg' type="text" placeholder={t.form[1]}/>
             </div>
-            <div className='mt-4' style={{width: '49%'}}>
-              <input className='w-full p-4 rounded-2xl bg-gray-100 text-lg' type="email" placeholder={t.form[2]}
+            <div className='mt-4 md:w-1/2'>
+              <input className='w-full p-4 md:mr-1 rounded-2xl bg-gray-100 text-lg' type="email" placeholder={t.form[2]}
                      required={true}/>
             </div>
-            <div className='mt-4' style={{width: '49%'}}>
-              <input className='w-full p-4 rounded-2xl bg-gray-100 text-lg' type="text"
+            <div className='mt-4 md:w-1/2'>
+              <input className='w-full p-4 md:ml-1 rounded-2xl bg-gray-100 text-lg' type="text"
                      placeholder={t.form[3]} required={true}/>
             </div>
             <div className='w-full mt-4'>
@@ -69,15 +69,15 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className='mt-20 mb-8 flex items-center'>
-        <div className='w-8/12'>
-          <div className='w-10/12'>
+      <div className='mt-20 mb-8 mx-4 md:flex items-center'>
+        <div className='md:w-8/12'>
+          <div className='md:w-10/12'>
             <h2 className='text-5xl font-bold'>Paul Pladziewicz</h2>
             <h3 className='mt-2 text-4xl font-semibold text-purple-700'>{t.footer.title}</h3>
             <p className='mt-2 font-light'>{t.footer.desc}</p>
           </div>
         </div>
-        <ul className='w-4/12 mt-10 flex'>
+        <ul className='hidden md:block md:w-4/12 mt-10 md:flex md:flex-wrap'>
           <Link href={t.hrefs[0]}><a className='hidden sm:block mr-4 font-semibold text-lg'>{t.links[0]}</a></Link>
           <Link href={t.hrefs[1]}><a className='hidden sm:block mr-4 font-semibold text-lg'>{t.links[1]}</a></Link>
           <Link href={t.hrefs[2]}><a className='hidden sm:block mr-4 font-semibold text-lg'>{t.links[2]}</a></Link>
@@ -85,7 +85,7 @@ export default function Footer() {
         </ul>
       </div>
 
-      <p className='mb-2'>© Copyright 2021 Paul Pladziewicz. All rights reserved.</p>
+      <p className='mb-2 mx-4 text-center font-light'>© Copyright 2021 Paul Pladziewicz. All rights reserved.</p>
     </footer>
   )
 }

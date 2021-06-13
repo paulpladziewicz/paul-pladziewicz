@@ -73,14 +73,14 @@ export default function Footer() {
         <div className='md:w-8/12'>
           <div className='md:w-10/12'>
             <h2 className='text-5xl font-bold'>Paul Pladziewicz</h2>
-            <h3 className='mt-2 text-4xl font-semibold text-purple-700'>{t.footer.title}</h3>
+            <h3 className='mt-2 text-4xl font-bold text-purple-700'>{t.footer.title}</h3>
             <p className='mt-2 font-light'>{t.footer.desc}</p>
           </div>
         </div>
         <ul className='hidden md:block md:w-4/12 mt-10 md:flex md:flex-wrap'>
           <Link href={t.hrefs[0]}><a className='hidden sm:block mr-4 font-semibold text-lg'>{t.links[0]}</a></Link>
           <Link href={t.hrefs[1]}><a className='hidden sm:block mr-4 font-semibold text-lg'>{t.links[1]}</a></Link>
-          <Link href={t.hrefs[2]}><a className='hidden sm:block mr-4 font-semibold text-lg'>{t.links[2]}</a></Link>
+          {/*<Link href={t.hrefs[2]}><a className='hidden sm:block mr-4 font-semibold text-lg'>{t.links[2]}</a></Link>*/}
           <Link href={t.hrefs[3]}><a className='hidden sm:block mr-4 font-semibold text-lg'>{t.links[3]}</a></Link>
         </ul>
       </div>

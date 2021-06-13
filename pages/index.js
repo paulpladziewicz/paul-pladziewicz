@@ -60,30 +60,30 @@ export default function Home() {
         <div className='mt-20 lg:flex'>
           <img className='lg:hidden' src="/development-vector.jpeg"
                alt="vector image of people building a project with code"/>
-          <div className='w-6/12'>
-            <h1 className='text-7xl font-bold text-gray-800'>{t.jumbotron.heading}</h1>
-            <h2 className='mt-8 text-6xl font-medium text-gray-700'><span
+          <div className='lg:w-6/12'>
+            <h1 className='text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-800'>{t.jumbotron.heading}</h1>
+            <h2 className='mt-8 text-4xl sm:text-5xl lg:text-6xl font-medium text-gray-700'><span
               className='font-bold text-purple-700'>{t.jumbotron.desc[0]}</span> {t.jumbotron.desc[1]} <span
               className='font-bold text-purple-700'>{t.jumbotron.desc[2]}</span> {t.jumbotron.desc[3]} <span
               className='font-bold text-purple-700'>{t.jumbotron.desc[4]}</span>{t.jumbotron.desc[5]}</h2>
           </div>
-          <div className='w-6/12'>
+          <div className='hidden lg:block lg:w-6/12'>
             <img src="/development-vector.jpeg" alt="vector image of people building a project with code"/>
           </div>
         </div>
 
 
-        <div className='mt-40 mx-auto w-3/4 text-center'>
-          <h2 className='text-6xl font-semibold text-gray-700'>{t.purpose[0]}</h2>
-          <span className='block mt-6 text-6xl font-bold text-purple-700'>{t.purpose[1]}</span>
+        <div className='mt-40 md:mx-auto md:w-3/4 text-center'>
+          <h2 className='text-4xl sm:text-5xl lg:text-6xl font-semibold text-gray-700'>{t.purpose[0]}</h2>
+          <span className='block mt-6 text-4xl sm:text-5xl lg:text-6xl font-bold text-purple-700'>{t.purpose[1]}</span>
         </div>
 
         <div>
           <img src="/hands.jpeg" alt="many hand prints with different colors"/>
         </div>
 
-        <div className='mt-40 flex'>
-          <div className='w-1/2 rounded-lg p-8 bg-purple-800 to-purple-600'>
+        <div className='mt-40 md:flex'>
+          <div className='md:w-1/2 rounded-lg p-8 bg-purple-800 to-purple-600'>
             <h2 className='text-white text-4xl font-bold'>{t.skills[0]}</h2>
             <p className='mt-4 text-xl font-light text-white'>{t.skills[1]}</p>
             <p className='mt-2 text-xl font-light text-white'>{t.skills[2]}</p>
@@ -118,9 +118,9 @@ export default function Home() {
             </div>
           </div>
 
-          <div className='w-1/2 p-8'>
+          <div className='mt-8 md:w-1/2 md:p-8 md:mt-0'>
             <h2 className='text-center text-purple-700 text-4xl font-bold'>{t.quotesTitle}</h2>
-            <ul className='mt-4 mx-auto w-10/12 text-center'>
+            <ul className='mt-4 mx-auto md:w-10/12 text-center'>
               <li className='mt-10 text-xl font-medium'>{t.quotes[0]} <p className='text-right text-lg text-gray-700 mr-4'>- Dennis Ritchie</p>
               </li>
               <li className='mt-10 text-xl font-medium'>{t.quotes[1]} <p className='text-right text-lg text-gray-700 mr-4'>-

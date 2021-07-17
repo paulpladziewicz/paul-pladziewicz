@@ -1,5 +1,6 @@
 import {useRouter} from "next/router";
 import Layout from "../components/Layout";
+import Image from 'next/image'
 import Head from 'next/head'
 
 const en = {
@@ -68,7 +69,7 @@ export default function Home() {
               className='font-bold text-purple-700'>{t.jumbotron.desc[4]}</span>{t.jumbotron.desc[5]}</h2>
           </div>
           <div className='hidden lg:block lg:w-6/12'>
-            <img src="/development-vector.jpeg" alt="vector image of people building a project with code"/>
+            <Image src="/development-vector.jpeg" width={680} height={440} alt="vector image of people building a project with code"/>
           </div>
         </div>
 
